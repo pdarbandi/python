@@ -23,6 +23,7 @@ word = "Cool"
 # Your code below:
 
 
+print(chars[:int(len(chars)/2)] + word + chars[int(len(chars)/2):])
 
 
 

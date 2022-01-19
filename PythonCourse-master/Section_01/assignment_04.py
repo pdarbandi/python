@@ -20,8 +20,9 @@ word2 = "Truck"
 
 # Your code below:
 
+print(word1[1:] + word2[0] + word2[2:])
 
-
+print("{0}{1}{2}".format(word1[1:] , word2[0:1] , word2[2:]))
 
 
 

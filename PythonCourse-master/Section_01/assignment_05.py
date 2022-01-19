@@ -24,7 +24,11 @@ word = "Cool"
 
 # Your code below:
 
+print(chars[:int(len(chars)/2)] + word + chars[int(len(chars)/2):])
 
+size = len(chars)
+idx = int(size/2) # dividing results in a float datatype.
+print(chars[:idx] + word + chars[idx:])
 
 
 
