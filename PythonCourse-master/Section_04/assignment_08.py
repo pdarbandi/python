@@ -17,19 +17,18 @@ sum78([1, 1, 7, 8, 2]) → 4
 #Your Code Below:
 
 
+def sum78(my_list):
+    i = 0
+    sum = 0
+    while i < len(my_list):
+        if my_list[i] == 7:
+            if 8 in my_list[i:]:
+                i += my_list[i:].index(8) + 1
+                continue
 
-
-
-
-
-
-
-
-
-
-
-
-
+        sum += my_list[i]
+        i += 1
+    return(sum)
 
 
 print(sum78([1, 2, 2])) #→ 5

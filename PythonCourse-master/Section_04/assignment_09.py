@@ -39,7 +39,12 @@ d= {
 # Your Code Below:
 # --------------------------------------
 
+for i in range(len(fr)):
+    if fr[i].split('|')[0] in d:
+        fr[i] = ('|'. join d[fr[i].split('|')[0]] + str(fr[i].split('|')[1:])
 
+    else:
+        print(fr[i].split('|')[0])
 
 
 

@@ -17,7 +17,16 @@ last2('axxxaaxx') → 2
 """
 
 # Your Code Below:
-
+def last2(str):
+    count = 0
+    if len(str) < 3:
+        return count
+    else:
+        pattern = str[-2:]
+        for i in range(len(str) - 2):
+            if str[i:i+2] == pattern:
+                count += 1
+        return count
 
 
 print(last2('hixxhi')) #→ 1

@@ -16,7 +16,12 @@ first3([1, 2, 3, 4, 5]) → False
 # Your Code Below:
 
 
-
+def first3(my_list):
+    if len(my_list) > 0:
+        for i in range(4):
+            if my_list[i] == 6:
+                return True
+    return False
 
 
 

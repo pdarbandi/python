@@ -7,6 +7,12 @@
     Make sure to test the function.
 """
 # Your Code Below:
+def separate(input_str):
+    return list(input_str)
+
+
+
+print(separate("hello there"))
 
 
 

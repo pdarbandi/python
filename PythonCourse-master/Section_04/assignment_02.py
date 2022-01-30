@@ -19,8 +19,13 @@ Example:
 
 # Your Code Below:
 
+def pay_extra(working, hour):
+    return ((hour < 8 or hour > 20) and working)
 
 
+print(pay_extra(True, 11))
+print(pay_extra(False, 5))
+print(pay_extra(True, 6))
 
 
 

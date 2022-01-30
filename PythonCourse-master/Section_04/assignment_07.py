@@ -15,11 +15,19 @@ EXAMPLE:
 #Your Code Below:
 
 
+def string_match(str1, str2):
+    count = 0
+    j = min(len(str1), len(str2))
+    for i in range(j - 1):
+        if str1[i:i+2] == str2[i:i+2]:
+            count += 1
+    print(count)
 
 
 
-
-
+string_match('xxcaazz', 'xxbaaz')
+string_match('abc', 'abc')
+string_match('abc', 'axc')
 
 
 

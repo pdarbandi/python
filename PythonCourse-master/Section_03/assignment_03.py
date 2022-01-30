@@ -9,11 +9,12 @@ the string argument in addition to each of the characters in the string
 argument as individual elements in the list.
 
 """
+
 # Your Code Below:
+def multi_merge (in_list, in_str):
+    return  in_list + str(in_str).split() + list(in_str)
 
-
-
-
+print(multi_merge([1,2,3,4], "Hello My name is imtiaz"))
 
 
 

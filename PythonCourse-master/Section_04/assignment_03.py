@@ -13,15 +13,23 @@ sequence([]) → False
 
 # Your Code Below:
 
+def sequence(my_list):
+    for i in range(len(my_list) - 2):
+        if my_list[i] == 1 and my_list[i+1] == 2 and my_list[i+2] == 3:
+            return True
+    return False
+
+
+print(sequence([1, 1, 2, 3, 1]))
+print(sequence([1, 1, 2, 4, 1]))
+print(sequence([1, 1, 2, 1, 2, 3]))
+print(sequence([1, 2]))
+print(sequence([]))
 
 
 
 
-
-
-
-
-
+#print ([1, 2, 3] in [1, 1, 2, 3, [1, 2, 3]]) => True
 
 
 

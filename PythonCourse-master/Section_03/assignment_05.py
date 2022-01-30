@@ -15,9 +15,15 @@ Example:
 
 # Your Code Below:
 
+def key_list_items(key, **kwargs):
+    keys = kwargs[key]
+    return keys[-2]
+
+print(key_list_items("things", things=['book', 'tv'], people=['pete', 'mike', 'jan', 'tom']))
+print(key_list_items("people", people=['pete', 'mike', 'jan', 'tom'], things=['book', 'tv']))
 
 
-
+print(key_list_items("ages", things=['book', 'tv', 'shoes'], people=['pete', 'mike', 'jan', 'tom'], ages=[20, 30, 40]))
 
 
 
